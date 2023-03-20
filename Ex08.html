@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex08</title>
+</head>
+<body>
+<script>
+    let str = prompt('Nhập chuỗi 10 số nguyên bất kỳ (ngăn cách bằng dấu phẩy):');
+    let arr = str.split(',');
+    arr.sort(function (a, b) {
+        return b - a;
+    })
+    alert(arr);
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex03</title>
+</head>
+<body>
+<script>
+    let str = prompt('Nhập mảng (ngăn cách các phần tử bởi dấu phẩy):');
+    let arr = str.split(',');
+    let max = arr[0];
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += +arr[i];
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    let avg = sum / arr.length;
+    alert(`Giá trị lớn nhất trong mảng là ${max} và giá trị trung bình của các phần tử trong mảng là ${avg}`);
+</script>
+</body>
+</html>

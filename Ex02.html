@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex02</title>
+</head>
+<body>
+<script>
+    let str = prompt('Nhập mảng gồm 10 phần tử khác nhau (ngăn cách các phần tử bởi dấu phẩy):');
+    let arr = str.split(',');
+    let max = arr[0];
+    let index;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+            index = i;
+        }
+    }
+    alert(`Phần tử có giá trị lớn nhất là ${max} ở vị trí ${index}`);
+</script>
+</body>
+</html>
